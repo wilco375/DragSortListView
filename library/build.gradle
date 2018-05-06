@@ -1,9 +1,11 @@
 apply plugin: 'com.android.library'
 apply plugin: 'maven'
 apply plugin: 'signing'
+apply plugin: 'com.github.dcendents.android-maven'
+
+group='com.github.wilco375'
 
 archivesBaseName = 'drag-sort-listview'
-group = 'asia.ivity.android'
 
 repositories {
     mavenCentral()
