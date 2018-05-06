@@ -1,0 +1,36 @@
+apply plugin: 'com.android.library'
+apply plugin: 'maven'
+apply plugin: 'signing'
+
+archivesBaseName = 'drag-sort-listview'
+group = 'asia.ivity.android'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.android.support:support-v4:27.1.0'
+}
+
+android {
+	compileSdkVersion 27
+	buildToolsVersion '27.0.3'
+	
+	sourceSets {
+		main {
+			manifest.srcFile 'AndroidManifest.xml'
+			java.srcDirs = ['src']
+			res.srcDirs = ['res']
+		}
+	}
+  lintOptions {
+    abortOnError false
+  }
+}
+
+task instrumentTest(dependsOn: connectedCheck)
+
+signing {
+    sign configurations.archives
+}
