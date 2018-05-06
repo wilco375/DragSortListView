@@ -12,6 +12,7 @@
 bin/
 gen/
 target/
+*/build/
 
 # Local configuration file (sdk path, etc)
 local.properties
@@ -20,3 +21,8 @@ local.properties
 # Eclipse project files
 .classpath
 .project
+
+# Android studio project files
+.gradle/
+.idea/
+*.iml

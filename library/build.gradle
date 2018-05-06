@@ -1,6 +1,5 @@
 apply plugin: 'com.android.library'
 apply plugin: 'maven'
-apply plugin: 'signing'
 apply plugin: 'com.github.dcendents.android-maven'
 
 group='com.github.wilco375'
@@ -32,7 +31,3 @@ android {
 }
 
 task instrumentTest(dependsOn: connectedCheck)
-
-signing {
-    sign configurations.archives
-}
