@@ -2,13 +2,11 @@ package com.mobeta.android.demodslv;
 
 import com.mobeta.android.dslv.DragSortController;
 
-import android.support.v4.app.DialogFragment;
+import androidx.fragment.app.DialogFragment;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
-
-import com.mobeta.android.dslv.DragSortController;
 
 /**
  * Sets drag init mode on DSLV controller passed into ctor.

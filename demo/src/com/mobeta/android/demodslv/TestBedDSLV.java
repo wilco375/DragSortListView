@@ -3,11 +3,10 @@ package com.mobeta.android.demodslv;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v4.app.ListFragment;
+import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
+
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MenuInflater;
